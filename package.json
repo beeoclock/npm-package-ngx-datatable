@@ -1,6 +1,19 @@
 {
   "name": "ngx-datatable",
   "version": "0.0.0",
+  "private": false,
+  "files": [
+    "dist/swimlane/ngx-datatable/**/*"
+  ],
+  "types": "dist/swimlane/ngx-datatable/index.d.ts",
+  "module": "dist/swimlane/ngx-datatable/fesm2022/swimlane-ngx-datatable.mjs",
+  "exports": {
+    ".": {
+      "types": "./dist/swimlane/ngx-datatable/index.d.ts",
+      "esm2022": "./dist/swimlane/ngx-datatable/fesm2022/swimlane-ngx-datatable.mjs",
+      "default": "./dist/swimlane/ngx-datatable/fesm2022/swimlane-ngx-datatable.mjs"
+    }
+  },
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -29,7 +42,6 @@
     "publish": "yarn publish:lib",
     "prepublishOnly": "echo \"This is the workspace -- you probably meant run 'yarn publish'.\" && exit 1"
   },
-  "private": true,
   "dependencies": {
     "@angular/animations": "^20.0.5",
     "@angular/cdk": "^20.0.4",
